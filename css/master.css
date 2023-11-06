@@ -1,0 +1,485 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #F3EFEA;
+    color: black;
+    font-size: 18px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    line-height: 27px;
+    word-wrap: break-word 
+}
+
+h1{
+    margin: 0;
+    color: #F6F6F6;
+    font-size: 48px;
+    font-family: Tenor Sans, sans-serif;
+    font-weight: 400;
+    line-height: 72px;
+    word-wrap: break-word
+}
+
+h2{
+    color: #57463A;
+    font-size: 48px;
+    font-family: Tenor Sans, sans-serif;
+    font-weight: 400;
+    line-height: 72px;
+    word-wrap: break-word   
+}
+
+button{
+    border: none; 
+    outline: none;
+    background: #A1B29F;
+    width: 328px; 
+    height: 60px;
+    color: #F6F6F6;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.header__nav__list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 140px 20.5px 142px;
+    border-bottom: 1px black solid;
+}
+
+.header__nav__link{
+    text-decoration: none;
+    color: #323232;
+    font-size: 14px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 21px;  
+    word-wrap: break-word   
+}
+
+.main{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 58%, rgba(0, 0, 0, 0) 100%);
+    background-image: url(/img/master_classes_wood1.png);
+    height: 601px;
+    padding: 268px 196px 104px 197px;
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main_button{
+    background: #F6F6F6;
+    color: #4C6D77;
+    margin-left: 359px; 
+}
+
+.works{
+    margin: 0 139px 160px 140px;
+}
+
+.works_cards{
+    margin-top: 100px;
+    margin-bottom: 84px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 50px 40px;
+}
+
+.works_text{
+    color: #323232;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16.48px;
+}
+
+.works_button{
+    margin-left: 417px;
+}
+
+.techniques{
+    margin: 0 0 160px 139px;
+}
+
+.techniques_list{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 315px;
+}
+
+.techniques_list_item{  
+    display: flex;
+    align-items: center;
+    column-gap: 43px;
+    margin-bottom: 57px;
+}
+
+.techniques_list_item p{
+    padding: 12px 23px;
+}
+
+.techniques_circle{
+    background: #A1B29F;
+    width: 60px;
+    height: 60px;
+    clip-path: circle(50%);
+    text-align: center;
+    color: #F6F6F6;
+    font-size: 24px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    line-height: 36px;
+    word-wrap: break-word   
+}
+
+.techniques_line{
+    transform: rotate(90deg); 
+    transform-origin: -15px 46px 0px;  
+    border: 1px #C4C4C4 solid;
+    width: 646px;
+}
+
+.second_life{  
+    background-image: url(/img/master_classes_wood2.png);
+    height: 508px;
+    background-size: cover;
+    margin-bottom: 160px;
+}
+
+.second_life_title{
+    color: #F6F6F6;
+    text-align: center;
+    padding-top: 182px;
+}
+
+.master-classes_furniture{
+    margin: 0 170px 158px 140px;
+}
+
+.master-classes_furniture_cards{
+    margin-top: 104px;
+    margin-left: 28;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 77px 91px;
+}
+
+.master-classes_furniture_text{
+    color: #323232;
+    font-weight: 700;
+}
+
+.master-classes_carpentry{
+    margin: 0 140px 157px;
+}
+
+.master-classes_carpentry_content{
+    margin-top: 99px;
+    display: flex;
+    row-gap: 17px;
+    text-align: center;
+}
+
+.master-classes_carpentry_content img:first-child{
+    margin-right: 40px;
+}
+
+.master-classes_carpentry_text{
+    color: #323232;
+    font-weight: 700;
+}
+
+.redesign_guide{
+    margin: 0 140px 322px 137px;
+    display: flex;
+}
+
+.redesign_guide_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.redesign_guide_button{
+    width: 328px;
+}
+
+.redesign_guide_content_adap{
+    display: none;
+}
+
+.footer{
+    background: #715B4B;
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 84px 140px 239px;
+}
+
+.footer__nav__item{
+    text-decoration: none;
+    color: #F6F6F6;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.footer__nav__list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_social_networks :first-child{
+    padding-right: 10px;
+}
+
+.nav_phone{
+    display: none;
+}
+
+@media (max-width: 376px) {
+    br{
+        display: none;
+    }
+
+    h1,h2{
+        margin: 0;
+        font-size: 32px;     
+        line-height: 48px; 
+    }
+
+    .header__nav__list{
+        display: none;  
+    }
+    
+    .nav_phone{
+        display: block;
+        width: 68px;
+        height: 15px; 
+        margin: 27px 29px 40px 278px;   
+    }
+
+    .nav_phone span,
+    .nav_phone span::before,
+    .nav_phone span::after{
+        position: absolute;
+        width: 68px;
+        height: 3px;
+        background: #57463A;   
+    }
+
+    .nav_phone span::before,
+    .nav_phone span::after{
+        content:'';
+    }
+
+    .nav_phone span::before{
+       transform: translateY(-5px);
+    }
+
+    .nav_phone span::after{
+        transform: translateY(5px);
+    }
+
+    .main{
+        background-size: cover;
+        height: 682px;
+        padding: 249px 12px 167px 38px;
+        margin-bottom: 77px;
+    }
+    
+    .main_button{
+        width: 300px;
+        margin: 0 37px 0 0;  
+    }
+
+    .works{
+        margin: 0 37px 86px 38px;
+    }
+    
+    .works_cards{
+        margin-top: 77px;
+        margin-bottom: 30px;
+        justify-content: flex-start;
+        text-align: center;
+        gap: 0 22px;
+    }
+
+    .works_cards figure{
+        margin-bottom: 40px;
+    }
+
+    .works_cards img{
+        padding-bottom: 20px;
+        width: 139px;
+        height: 161px;
+    }
+
+    .works_button{
+        width: 300px;
+        margin: 0px;
+    }
+
+    .techniques{
+        margin: 0 5px 100px 38px;
+    }
+    
+    .techniques_list{
+        margin-top: 86px;
+        margin-left: 0;
+    }
+    
+    .techniques_list_item{  
+        column-gap: 23px;
+        margin-bottom: 57px;
+    }
+    
+    .techniques_line{
+        width: 765px;
+    }
+
+    .master-classes_furniture{
+        margin: 0 42px 98px 38px;
+    }
+    
+    .master-classes_furniture_cards{
+        margin-top: 150px;
+        margin-left: -17px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 40px 0;
+    }
+
+    .master-classes_furniture_cards img{
+        width: 148px;
+    }
+
+    .master-classes_furniture_cards figure{
+        width: 150px;
+    }
+    
+    .master-classes_furniture_cards figure:nth-child(2n+1){
+        margin-right: 10px;
+    }
+
+
+    .master-classes_carpentry{
+        margin: 0 25px 98px 30px;
+    }
+    
+    .master-classes_carpentry_content{
+        margin-left: 8px;
+        margin-top: 40px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    
+    .master-classes_carpentry_content img:first-child{
+        margin-right: 0px;
+    }
+
+    .master-classes_carpentry_content img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .master-classes_carpentry_content figure{
+        width: 300px;
+        height: 347px;
+    }
+
+    .redesign_guide{
+        margin: 0 12px 152px 35px;
+    }
+    
+    .redesign_guide_content{
+        display: none;
+    }
+
+    .redesign_guide_img{
+        display: none;
+    }
+
+    .redesign_guide_content_adap{
+        display: block;
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .redesign_guide_content_adap br{
+        display: block;
+    }
+
+    .redesign_guide_content_adap p{
+        margin-bottom: 20px;
+    }
+
+    .redesign_guide_content_adap img{
+        margin: 58px 25px 90px 3px;
+        width: 300px;
+        height: 475px;
+    }
+    
+    .redesign_guide_button{
+        width: 245px;
+    }
+
+    .footer__nav__list li{
+        padding-bottom: 9px;
+    }
+
+    .footer_social_networks{
+        order: 1;
+        margin-bottom: 111px;
+    }
+
+    .footer__nav__list:nth-of-type(2){
+        order: 2;
+    }
+
+    .footer__nav__list:nth-of-type(3){
+        order: 3;
+        margin-bottom: 53px;
+    }
+
+    .footer__nav__list:nth-of-type(4){
+        order: 4;
+        margin-bottom: 53px;
+    }
+
+    .footer__nav__list:nth-of-type(1){
+        order: 5;
+    }
+
+    .footer__nav{
+        flex-direction: column;
+        padding: 40px 89px 236px 38px;
+    }    
+}
+
+
+
+
+
+

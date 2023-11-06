@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #F3EFEA;
+    color: black;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word  
+}
+
+h1,h2{
+    margin: 0;
+    color: #57463A;
+    font-size: 48px;
+    font-family: Tenor Sans, sans-serif;
+    font-weight: 400;
+    line-height: 72px;
+    word-wrap: break-word   
+}
+
+button{
+    border: none; 
+    outline: none; 
+    background: #A1B29F;
+    width: 245px; 
+    height: 60px;
+    color: #F6F6F6;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word   
+}
+
+.header__nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    border-bottom: 1px black solid;
+    padding: 30px 141px 20.5px;
+    margin-bottom: 120.5px;
+}
+
+.header__nav__link{
+    text-decoration: none;
+    color: #323232;
+    font-size: 14px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 21px;  
+    word-wrap: break-word   
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.history_title{
+    margin-bottom: 19px;
+}
+
+.history_img{
+    margin: 40px 140px 157.5px;
+} 
+
+.history_card{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 140px 160px;  
+}
+    
+.founder{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0px 140px 160px;
+}
+
+.founder_info{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.founder_text{   
+    margin-bottom: 70px;    
+}
+
+.founder_title{
+    color: black;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 20px;
+}
+
+.philosophy_title{
+    padding-left: 138px;
+}
+
+.philosophy_text{
+    padding: 70px 145px 0 0;
+    margin-bottom: 160px; /*засунь margin в padding*/
+    text-align: end;
+    color: #323232;
+    font-size: 24px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    line-height: 36px;
+    word-wrap: break-word   
+}
+
+.mass_media{
+    text-align: left; 
+}
+
+.mass_media_title{
+    margin: 0 0 100px 138px ;
+}
+
+.mass_media_img{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 210px 165.24px 219px;
+}
+
+.mass_media_text{
+    margin-top: 20px;
+    color: #323232;
+}
+
+.mass_media_right_btn{
+    visibility: hidden;
+}
+
+.application{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 243px;
+}
+
+.application_title{
+    margin: 0 136px 100px 0;
+}
+
+.footer{
+    background: #715B4B;
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 84px 140px 190px;
+}
+
+.footer__nav__item{
+    text-decoration: none;
+    color: #F6F6F6;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.footer__nav__list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_social_networks :first-child{
+    padding-right: 10px;
+}
+
+.footer_social_networks p{
+    padding-top: 32px;
+}
+
+.nav_phone{
+    display: none;
+}
+
+@media (max-width: 376px) {
+    br{
+        display: none;
+    }
+
+    h1,h2{
+        margin: 0;
+        font-size: 32px;     
+        line-height: 48px; 
+    }
+
+    .header__nav__list{
+        display: none;  
+    }
+    
+    .nav_phone{
+        display: block;
+        width: 68px;
+        height: 15px; 
+        margin: 27px 29px 93px 278px;   
+    }
+
+    .nav_phone span,
+    .nav_phone span::before,
+    .nav_phone span::after{
+        position: absolute;
+        width: 68px;
+        height: 3px;
+        background: #57463A;   
+    }
+
+    .nav_phone span::before,
+    .nav_phone span::after{
+        content:'';
+    }
+
+    .nav_phone span::before{
+       transform: translateY(-5px);
+    }
+
+    .nav_phone span::after{
+        transform: translateY(5px);
+    }
+
+    .history h1, .history h2 {
+        margin-left: 36px;
+        text-align: start;
+    }
+
+    .history_img{
+        margin: 49px 0 72px;
+        height: 264px;
+        width: 375px;
+        object-fit: cover;
+        object-position: 75% 0;
+    }
+
+    .history_card{
+        flex-direction: column;
+        margin: 0 64px 90px 38px;
+        align-items: flex-start;
+        text-align: start;
+        gap: 40px;
+    }
+
+    .founder{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .founder img{
+        height: 462px;
+        width: 375px;
+        object-fit: cover;
+        object-position: 35% 0;
+    }
+
+    .founder_text{   
+        margin-bottom: 40px;    
+    }
+
+    .founder_info{
+        margin: 60px 37px 90px 38px;  
+    }
+
+    .founder_info p{
+        padding-bottom: 20px;
+    }
+
+    .philosophy_title{
+        padding-left: 38px;
+    }
+
+    .philosophy_text{
+        padding: 60px 37px 128px 38px;
+        text-align: end;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+
+    .mass_media_title{
+        margin: 0 0 60px 38px ;
+    }
+    
+    .mass_media_img{
+        visibility: hidden;
+        margin: 0 74px 90px 71px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .mass_media_img img:nth-child(1){
+        visibility: visible;
+    }
+
+    .mass_media_right_btn{
+        visibility: visible;
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 15px;
+        font-size: 15px;
+        width: 17px;
+        height: 17px;
+        left: 321px;
+        top: 3250px;
+    }
+
+    .application_title{
+        margin: 0 13px 60px 0;
+    }
+
+    .application{
+        margin: 0 37px 150px 38px;
+    }
+    
+    .application_button{
+        width: 300px;
+    }
+
+    .footer__nav__list li{
+        padding-bottom: 9px;
+    }
+
+    .footer_social_networks{
+        order: 1;
+        margin-bottom: 111px;
+    }
+
+    .footer__nav__list:nth-of-type(2){
+        order: 2;
+    }
+
+    .footer__nav__list:nth-of-type(3){
+        order: 3;
+        margin-bottom: 53px;
+    }
+
+    .footer__nav__list:nth-of-type(4){
+        order: 4;
+        margin-bottom: 53px;
+    }
+
+    .footer__nav__list:nth-of-type(1){
+        order: 5;
+    }
+
+    .footer__nav{
+        flex-direction: column;
+        padding: 40px 89px 236px 38px;
+    }   
+}
