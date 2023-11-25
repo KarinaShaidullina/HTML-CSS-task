@@ -121,7 +121,7 @@
                     <p class="services_subtitle">Мебель на заказ</p>
                     <p class="services_text">Мебель под заказ по индивидуальным размерам это гарантия отличного качества, долговечность, экологичность и эксклюзивность наших изделий. 
                                              Возможность создания своего неповторимого стиля, уникальность и неповторимость каждого изделия.</p>
-                    <button>Заказать мебель</button> 
+                    <button class="btn_action">Заказать мебель</button> 
                 </div>       
             </div>
             <div class="service_2">
@@ -131,7 +131,7 @@
                     <p class="services_text">Что делать, если память о предках хочется сохранить, но к вашему интерьеру старая и испорченная мебель не подходит? 
                                              Правильно, отреставрировать его и наслаждаться не только обновлённым видом мебели, но и с теплотой помнить, что эта мебель была сделана талантливыми предками.
                     </p>
-                    <button>Купить мастер-класс</button>
+                    <button class="btn_action">Купить мастер-класс</button>
                 </div>
             </div>
         </section>
@@ -178,6 +178,24 @@
 		    </div>
 		</nav>		
 	</footer>
+
+    <section id="myModal" class="modal">
+			<div class="modal_content">
+				<span class="close">x</span>
+				<div class="modal_field">
+					<p>Имя:</p>
+					<input class="input_name" type="text" placeholder="Введите свое имя">
+					<label class="input_name_label">Неверный формат имени</label>
+				</div>
+				<div class="modal_field">
+					<p>Номер телефона:</p>
+					<input class="input_phone" type="number" placeholder="Введите номер телефона">
+					<label class="input_phone_label">Неверный формат номера</label>
+				</div>
+				<button class="modal_button">Связаться</button>
+			</div>
+	</section>
+    <script src="script.js"></script>
     <script src="functions.js"></script>
 </body>
 </html>
